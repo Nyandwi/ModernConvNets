@@ -30,7 +30,19 @@ Convolutional Neural Networks (a.k.a ConvNets or CNNs) are classes of neural net
 
 * ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/10-convnext.ipynb), [annotated_paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
 
-For more about ConvNets, check out this introductory notebook or 🔽 below. 
+For more about ConvNets, check out this introductory notebook.
 
 
+### References Implementations and Similar Repositories
 
+* Keras Applications
+* Timm
+* PyTorch Vision
+* ML Tokyo
+
+
+### Disclaimer
+
+The implementations of ConvNets architectures contained in this repository were not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and it impacted the design of language type architectures.
+
+If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like Keras, TensorFlow Hub, PyTorch Vision, Timm, and OpenMML Lab. 
