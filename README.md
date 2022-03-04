@@ -30,25 +30,29 @@ Convolutional Neural Networks (a.k.a ConvNets or CNNs) are classes of neural net
 
 * EfficientNet - Rethinking Model Scaling for Convolutional Neural Networks: [implementation](convnets/10-efficientnet.ipynb), [annotated_paper](annotated_papers/efficientnetv1.pdf), [paper](https://arxiv.org/abs/1905.11946v5). See also [EfficientNetV2](https://arxiv.org/abs/2104.00298v3)
 
+* RegNet - Designing Network Design Spaces: [implementation](convnets/11-regnet.ipynb), [annotated_paper](annotated_papers/regnet.pdf), [paper](hhttps://arxiv.org/abs/2003.13678). See also [this](https://arxiv.org/abs/2103.06877)
+
 * ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/10-convnext.ipynb), [annotated_paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
 
-* RegNetY - Coming soon
 * ConvMixer - Coming soon
 
 
 For more about ConvNets, check out this introductory notebook.
 
+### On Choosing a ConvNets Architecture
+
+
 
 ### References Implementations and Similar Repositories
 
-* Keras Applications
-* Timm
-* PyTorch Vision
-* ML Tokyo
+* [Keras Applications](https://github.com/keras-team/keras/tree/master/keras/applications)
+* [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models)
+* [PyTorch Vision](https://github.com/pytorch/vision)
+* [Machine Learning Tokyo](https://github.com/Machine-Learning-Tokyo/CNN-Architectures)
 
 
 ### Disclaimer
 
-The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and it impacted the design of other language architectures. Currently, there are lots going on such as visual attentions.
+The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the design of other language architectures. 
 
-If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like Keras, TensorFlow Hub, PyTorch Vision, Timm, GluoCV, and OpenMML Lab.
+If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluoCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
