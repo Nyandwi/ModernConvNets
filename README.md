@@ -1,13 +1,13 @@
-# ConvNets Architectures
+# Modern Convolutional Neural Network Architectures
 ------
-Revision of the designs and implementation of modern Convolutional Neural Networks.
+Revision of the designs and implementation of modern ConvNets architectures.
 ------
 ![cnns_image](images/gitcover.png)
 
-Convolutional Neural Networks (a.k.a ConvNets or CNNs) are classes of neural networks that are mostly used for image recognition tasks.
+Convolutional Neural Networks (ConvNets or CNNs) are classes of neural networks that are mostly used for visual recognition tasks.
 
 
-### Covered ConvNets Architectures
+### ConvNets Architectures
 
 * AlexNet - Deep Convolutional Neural Networks: [implementation](convnets/1-alexnet.ipynb), [paper](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
   
