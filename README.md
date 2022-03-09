@@ -24,19 +24,17 @@ Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks 
 
 * DenseNet - Densely Connected Convolutional Neural Networks: [implementation](convnets/05-densenet.ipynb), [annotated paper](annotated_papers/densenet.pdf), [paper](https://arxiv.org/abs/1608.06993v5)
 
-* MobileNetV1 - Efficient Convolutional Neural Networks for Mobile Vision Applications: [implementation](convnets/08-mobilenet.ipynb), [annotated_paper](annotated_papers/mobilenet.pdf), [paper](https://arxiv.org/abs/1704.04861v1)
+* MobileNetV1 - Efficient Convolutional Neural Networks for Mobile Vision Applications: [implementation](convnets/08-mobilenet.ipynb), [annotated paper](annotated_papers/mobilenet.pdf), [paper](https://arxiv.org/abs/1704.04861v1)
 
 * MobileNetV2 - Inverted Residuals and Linear Bottlenecks: [implementation](convnets/09-mobilenetv2.ipynb) [annotated paper](annotated_papers/mobilenetv2.pdf), [paper](https://arxiv.org/abs/1801.04381)
 
-* EfficientNet - Rethinking Model Scaling for Convolutional Neural Networks: [implementation](convnets/10-efficientnet.ipynb), [annotated_paper](annotated_papers/efficientnetv1.pdf), [paper](https://arxiv.org/abs/1905.11946v5). See also [EfficientNetV2](https://arxiv.org/abs/2104.00298v3)
+* EfficientNet - Rethinking Model Scaling for Convolutional Neural Networks: [implementation](convnets/10-efficientnet.ipynb), [annotated paper](annotated_papers/efficientnetv1.pdf), [paper](https://arxiv.org/abs/1905.11946v5). See also [EfficientNetV2](https://arxiv.org/abs/2104.00298v3)
 
-* RegNet - Designing Network Design Spaces: [implementation](convnets/11-regnet.ipynb), [annotated_paper](annotated_papers/regnet.pdf), [paper](hhttps://arxiv.org/abs/2003.13678). See also [this](https://arxiv.org/abs/2103.06877)
+* RegNet - Designing Network Design Spaces: [implementation](convnets/11-regnet.ipynb), [annotated paper](annotated_papers/regnet.pdf), [paper](hhttps://arxiv.org/abs/2003.13678). See also [this](https://arxiv.org/abs/2103.06877)
 
-* ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/12-convnext.ipynb), [annotated_paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
+* ConvMixer - Patches are All You Need?: [implementation](convnets/12-convmixer.ipynb), [annotated paper](annotated_papers/convmixer.pdf), [paper](https://openreview.net/pdf?id=TVHS5Y4dNvM).
 
-* ConvMixer - Coming soon
-
-
+* ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/13-convnext.ipynb), [annotated paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
 
 ### On Choosing a ConvNets Architecture
 
@@ -60,23 +58,23 @@ If you are a visionary or like to stay on the bleeding edge of the field, try [v
 
 ### Important Notes
 
-The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Learning and understanding how architectures works is not a necessity, but it's one of the good ways to stay on top of the field!
+The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
 
-If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluoCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
+If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
 
 ### Citation
 
 If you find this repository helpful, I will appreciate if you cite it:
+
 ```
-author: Jean de Dieu Nyandwi,
-title: ConvNets Architectures,
-year: 2022,
-publisher: GitHub,
+author: Jean de Dieu Nyandwi
+title: ConvNets Architectures
+year: 2022
+publisher: GitHub
 url: https://github.com/Nyandwi/convnets-architectures
 ```
 
-For any suggestion, comment, or simply anything, you're welcome to fill an issue or reach me through [email]("mailto:johnjw7084@gmail.com), [Twitter](https://twitter.com/Jeande_d) or [LinkedIn](https://www.linkedin.com/in/nyandwi/).
-
+For any suggestion, comment, or simply anything,you can reach out through [email]("mailto:johnjw7084@gmail.com), [Twitter](https://twitter.com/Jeande_d) or [LinkedIn](https://www.linkedin.com/in/nyandwi/).
 
 ***************************
 ![Twitter Follow](https://img.shields.io/twitter/follow/jeande_d?style=social)
