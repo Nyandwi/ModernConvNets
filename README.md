@@ -6,7 +6,9 @@
 -------
 ![cnns_image](images/gitcover.png)
 
-Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks that are used for visual recognition tasks.
+Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are used for visual recognition tasks.
+
+A standard CNNs is typically made of 3 main layers that are convolution, pooling, and fully connected layers. Convolution layers are the main component of CNNs. They are used for extracting features in images using filters. For more about CNNs, check [resources section](#further-learning)!
 
 ### ConvNets Architectures
 
@@ -40,13 +42,29 @@ Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks 
 
 Computer vision community is blessed with having many vision architectures that work great across many platforms or hardwares. But, having many options means it is not easy to choose an architecture that suits a given problem. How can you choose a CNNs architecture for your problem?
 
-The first rule of thumb is that you should not try to design your own architecture from scratch. If you are working on generic problem, it never hurts to start with ResNet-50. If you are building a mobile-based visual application where there is limited computation resources, try MobileNets(or other mobile friendly architectures like [ShuffleNetv2](https://arxiv.org/abs/1807.11164) or [ESPNetv2](https://arxiv.org/abs/1811.11431)). 
+The first rule of thumb is that you should not try to design your own architecture from scratch. If you are working on generic problem, it never hurts to start with ResNet-50. If you are building a mobile-based visual application where there is limited computation resources, try [MobileNets](https://arxiv.org/abs/1801.04381)(or other mobile friendly architectures like [ShuffleNetv2](https://arxiv.org/abs/1807.11164) or [ESPNetv2](https://arxiv.org/abs/1811.11431)). 
 
-For a better trade-off between accuracy and computation efficiency, I think [EfficientNetV2](https://arxiv.org/abs/2104.00298v3) and or latest [ConvNeXt](https://arxiv.org/abs/2201.03545) can be a good fit!
+For a better trade-off between accuracy and computation efficiency, try [EfficientNetV2](https://arxiv.org/abs/2104.00298v3) or latest [ConvNeXt](https://arxiv.org/abs/2201.03545)!
 
 That said, choosing architecture is a no free-lunch scenario. There is not a going to be a single architecture that works for all datasets and problems. It's all experimentation. It's all trying!
 
 If you are a visionary or like to stay on the bleeding edge of the field, try [vision transformers](https://paperswithcode.com/method/vision-transformer)!
+
+### Further Learning
+
+If you would like to learn more about CNNs, below are some few amazing resources:
+
+* [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu) - [Lecture 5](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=5) and [Lecture 9](https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9).
+* [MIT Introduction to Deep Learning](http://introtodeeplearning.com) - [Lecture 3](https://www.youtube.com/watch?v=AjtX1N_VT9E&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=4)
+* [CS230 Deep Learning - CNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
+* [CNNs Explainer](https://poloclub.github.io/cnn-explainer/)
+
+
+### Important Notes
+
+The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5[(LeCunn, 1998)](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) had 5 convolutional layers. AlexNet[(Krizhevsky, 2012)](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) had 8 layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. Today, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
+
+If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
 
 ### References Implementations
 
@@ -55,20 +73,13 @@ If you are a visionary or like to stay on the bleeding edge of the field, try [v
 * [PyTorch Vision](https://github.com/pytorch/vision)
 * [Machine Learning Tokyo](https://github.com/Machine-Learning-Tokyo/CNN-Architectures)
 
-
-### Important Notes
-
-The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5(LeCunn, 1998) had 5 convolutional layers. AlexNet(Alex, 2012) had 9 convolutional layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. And in fact, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
-
-If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
-
 ### Citation
 
 If you find this repository helpful, I will appreciate if you cite it:
 
 ```
 author: Jean de Dieu Nyandwi
-title: ConvNets Architectures
+title: Modern Convolutional Neural Networks Architectures
 year: 2022
 publisher: GitHub
 url: https://github.com/Nyandwi/convnets-architectures
