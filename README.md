@@ -4,6 +4,7 @@
 
 ***Revision of the designs and implementation of modern Convolutional Neural Network architectures***
 -------
+
 ![cnns_image](images/gitcover.png)
 
 ## Introduction to Convolutional Neural Networks
@@ -44,7 +45,7 @@ As you go through the materials in this repository, you will learn more about th
 
 * ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/13-convnext.ipynb), [annotated paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
 
-## On Choosing a ConvNets Architecture
+## On Choosing a ConvNet Architecture
 
 Computer vision community is blessed with having many vision architectures that work great across many platforms or hardwares. But, having many options means it is not easy to choose an architecture that suits a given problem. How can you choose a CNNs architecture for your problem?
 
