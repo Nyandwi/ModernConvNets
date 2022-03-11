@@ -6,7 +6,7 @@
 -------
 ![cnns_image](images/gitcover.png)
 
-### Introduction to Convolutional Neural Networks
+## Introduction to Convolutional Neural Networks
 
 Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are mostly used in image recognition tasks.
 
@@ -16,7 +16,7 @@ Example of CNN architectures that follow the above structure are [AlexNet](convn
 
 As you go through the materials in this repository, you will learn more about those architectures and how they are implemented. For more about CNNs, check [resources section](#further-learning)!
 
-### ConvNet Architectures
+## ConvNet Architectures
 
 * AlexNet - Deep Convolutional Neural Networks: [implementation](convnets/01-alexnet.ipynb), [paper](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
   
@@ -44,7 +44,7 @@ As you go through the materials in this repository, you will learn more about th
 
 * ConvNeXt - A ConvNet for the 2020s: [implementation](convnets/13-convnext.ipynb), [annotated paper](annotated_papers/convnexts.pdf), [paper](https://arxiv.org/abs/2201.03545)
 
-### On Choosing a ConvNets Architecture
+## On Choosing a ConvNets Architecture
 
 Computer vision community is blessed with having many vision architectures that work great across many platforms or hardwares. But, having many options means it is not easy to choose an architecture that suits a given problem. How can you choose a CNNs architecture for your problem?
 
@@ -57,20 +57,20 @@ That said, choosing architecture(or learning algorithm) is a no free-lunch scena
 If you are a visionary or like to stay on the bleeding edge of the field, take a look at [vision transformers](https://paperswithcode.com/method/vision-transformer)! We don't know yet, but they might be the successor of CNNs!
 
 
-### Important Notes
+## Important Notes
 
 The implementations of CNN architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5[(LeCunn, 1998)](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) had 5 convolutional layers. AlexNet[(Krizhevsky, 2012)](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) had 8 layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. Today, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
 
 If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
 
-### References Implementations
+## References Implementations
 
 * [Keras Applications](https://github.com/keras-team/keras/tree/master/keras/applications)
 * [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models)
 * [PyTorch Vision](https://github.com/pytorch/vision)
 * [Machine Learning Tokyo](https://github.com/Machine-Learning-Tokyo/CNN-Architectures)
 
-### Further Learning
+## Further Learning
 
 If you would like to learn more about CNNs, below are some few amazing resources:
 
@@ -79,7 +79,7 @@ If you would like to learn more about CNNs, below are some few amazing resources
 * [CS230 Deep Learning - CNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
 * [CNNs Explainer](https://poloclub.github.io/cnn-explainer/)
 
-### Citation
+## Citation
 
 If you find this repository helpful, you are welcome to cite it:
 
