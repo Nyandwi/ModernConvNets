@@ -2,15 +2,21 @@
 
 <p style='text-align: justify;'> <a href="https://nbviewer.jupyter.org/github/Nyandwi/convnets-architectures"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /> </a> <a href="https://colab.research.google.com/github/Nyandwi/convnets-architectures" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> </p>
 
-***Revision of the designs and implementation of modern convolutional neural networks architectures***
+***Revision of the designs and implementation of modern Convolutional Neural Network architectures***
 -------
 ![cnns_image](images/gitcover.png)
 
-Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are used for visual recognition tasks.
+### Introduction to Convolutional Neural Networks
 
-A standard CNNs is typically made of 3 main layers that are convolution, pooling, and fully connected layers. Convolution layers are the main component of CNNs. They are used for extracting features in images using filters. For more about CNNs, check [resources section](#further-learning)!
+Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are mostly used in image recognition tasks.
 
-### ConvNets Architectures
+A standard CNN architecture is typically made of 3 main layers that are convolution, max-pooling, and fully connected layers. Convolution layers are the main component of CNNs. They are used for extracting features in images using filters. Pooling layers are used for downsampling the activation or feature maps produced by convolutional layers. Downsampling can also be achieved by using strided-convolutions, but max-pooling layers don't have any learnable parameters and they introduce translational invariance which improves model generalization on the cost of [spatial inductive bias](https://samiraabnar.github.io/articles/2020-05/indist). Fully connected layers are used for classification purpose(matching learned features with their respective labels).
+
+Example of CNN architectures that follow the above structure are [AlexNet](convnets/01-alexnet.ipynb) and [VGG](convnets/02-vgg.ipynb). Most modern CNN architectures go beyond plain combination of convolution, max-pooling and fully connected layers. For example, architectures like [ResNet](convnets/04-resnet.ipynb) and other alike networks involve residual connections.
+
+As you go through the materials in this repository, you will learn more about those architectures and how they are implemented. For more about CNNs, check [resources section](#further-learning)!
+
+### ConvNet Architectures
 
 * AlexNet - Deep Convolutional Neural Networks: [implementation](convnets/01-alexnet.ipynb), [paper](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
   
@@ -46,23 +52,14 @@ The first rule of thumb is that you should not try to design your own architectu
 
 For a better trade-off between accuracy and computation efficiency, try [EfficientNetV2](https://arxiv.org/abs/2104.00298v3) or latest [ConvNeXt](https://arxiv.org/abs/2201.03545)!
 
-That said, choosing architecture is a no free-lunch scenario. There is not a going to be a single architecture that works for all datasets and problems. It's all experimentation. It's all trying!
+That said, choosing architecture(or learning algorithm) is a no free-lunch scenario. There is no universal architecture. There is no single architecture that is guaranteed to work for all datasets and problems. It's all experimentation. It's all trying!
 
-If you are a visionary or like to stay on the bleeding edge of the field, try [vision transformers](https://paperswithcode.com/method/vision-transformer)!
-
-### Further Learning
-
-If you would like to learn more about CNNs, below are some few amazing resources:
-
-* [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu) - [Lecture 5](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=5) and [Lecture 9](https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9).
-* [MIT Introduction to Deep Learning](http://introtodeeplearning.com) - [Lecture 3](https://www.youtube.com/watch?v=AjtX1N_VT9E&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=4)
-* [CS230 Deep Learning - CNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
-* [CNNs Explainer](https://poloclub.github.io/cnn-explainer/)
+If you are a visionary or like to stay on the bleeding edge of the field, take a look at [vision transformers](https://paperswithcode.com/method/vision-transformer)! We don't know yet, but they might be the successor of CNNs!
 
 
 ### Important Notes
 
-The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5[(LeCunn, 1998)](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) had 5 convolutional layers. AlexNet[(Krizhevsky, 2012)](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) had 8 layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. Today, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
+The implementations of CNN architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5[(LeCunn, 1998)](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) had 5 convolutional layers. AlexNet[(Krizhevsky, 2012)](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) had 8 layers. Few years later, Residual Networks(He, 2015) made the trends after showing that it's possible to train networks of over 100 layers. Today, residual networks are still one of the most widely used architecture across wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). Computer vision research community is very vibrant. Understanding how architectures are designed is not a neccesity, but it's one of the good ways to stay on top of this fast-ever changing field!
 
 If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
 
@@ -73,9 +70,18 @@ If you want to use ConvNets for solving a visual recognition tasks such as image
 * [PyTorch Vision](https://github.com/pytorch/vision)
 * [Machine Learning Tokyo](https://github.com/Machine-Learning-Tokyo/CNN-Architectures)
 
+### Further Learning
+
+If you would like to learn more about CNNs, below are some few amazing resources:
+
+* [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu) - [Lecture 5](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=5) and [Lecture 9](https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9)
+* [MIT Introduction to Deep Learning](http://introtodeeplearning.com) - [Lecture 3](https://www.youtube.com/watch?v=AjtX1N_VT9E&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=4)
+* [CS230 Deep Learning - CNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
+* [CNNs Explainer](https://poloclub.github.io/cnn-explainer/)
+
 ### Citation
 
-If you find this repository helpful, I will appreciate if you cite it:
+If you find this repository helpful, you are welcome to cite it:
 
 ```
 author: Jean de Dieu Nyandwi
@@ -84,8 +90,8 @@ year: 2022
 publisher: GitHub
 url: https://github.com/Nyandwi/convnets-architectures
 ```
-
-For any suggestion, comment, or simply anything,you can reach out through [email]("mailto:johnjw7084@gmail.com), [Twitter](https://twitter.com/Jeande_d) or [LinkedIn](https://www.linkedin.com/in/nyandwi/).
-
 ***************************
-![Twitter Follow](https://img.shields.io/twitter/follow/jeande_d?style=social)
+
+I have so much joy learning, revising, and implementing CNN architectures. While going through the materials in this repository, I hope you will enjoy them as much as I did!
+
+For any suggestion, comment, or simply anything, you can reach out through [email](mailto:johnjw7084@gmail.com), [Twitter](https://twitter.com/Jeande_d) or [LinkedIn](https://www.linkedin.com/in/nyandwi/).
