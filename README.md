@@ -2,7 +2,7 @@
 
 <p style='text-align: justify;'> <a href="https://nbviewer.jupyter.org/github/Nyandwi/convnets-architectures"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /> </a> <a href="https://colab.research.google.com/github/Nyandwi/convnets-architectures" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> </p>
 
-***Revision of the designs and implementation of Modern Convolutional Neural Network architectures***
+>***Revision of the designs and implementation of Modern Convolutional Neural Network architectures***
 -------
 
 ![cnns_image](images/gitcover.png)
