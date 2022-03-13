@@ -9,7 +9,7 @@
 
 ## Introduction to Convolutional Neural Networks
 
-Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are mostly used in image recognition tasks.
+Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are mostly used in visual recognition tasks such as [image classification](https://twitter.com/Jeande_d/status/1462040682437120001), object detection, and image segmentation. The use of ConvNets in visual recognition is inarguably one of the [biggest inventions of decade 2010s in deep learning community](https://twitter.com/Jeande_d/status/1501188511281549321?s=20&t=dCZzcKKoXgvVL_8ebVDclg).
 
 A standard ConvNet architecture is typically made of 3 main layers that are convolution, max-pooling, and fully connected layers. Convolution layers are the main component of ConvNets. They are used for extracting features in images using filters. 
 
@@ -65,7 +65,7 @@ If you are a visionary or like to stay on the bleeding edge of the field, take a
 The implementations of ConvNets architectures contained in this repository are not optimized for training but rather to understand how those networks were designed, principal components that makes them and how they evolved overtime. LeNet-5[(LeCunn, 1998)](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) had 5 layers(with learnable weights, pooling layers excluded). AlexNet[(Krizhevsky et al., 2012)](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) had 8 layers. Few years later, Residual Networks[(He et al., 2015)](https://arxiv.org/abs/1512.03385) made the trends after showing that it's possible to train networks of over 100 layers. Today, residual networks are still one of the most widely used architecture across a wide range of visual tasks and they impacted the [design of language architectures](https://arxiv.org/abs/2203.00555). 
 
 Computer vision research community is [very vibrant](https://twitter.com/Jeande_d/status/1446468370182799364).
-With the intelligent frameworks and better architectures we have to day, understanding how networks architectures are designed before you can throw them in your dataset is never a neccesity, but it's one of the ways to stay on top of this vibrant and fast-ever changing field!
+With the intelligent frameworks and better architectures we have to day, understanding how networks architectures are designed before you can throw them in your dataset is never a neccesity, but it's one of the best ways to stay on top of this vibrant and fast-ever changing field!
 
 If you want to use ConvNets for solving a visual recognition tasks such as image classification or object detection, you can get up running quickly by getting the models (and their pretrained weights) from tools like [Keras](https://keras.io), [TensorFlow Hub](https://tfhub.dev), [PyTorch Vision](https://github.com/pytorch/vision), [Timm PyTorch Image Models](https://github.com/rwightman/pytorch-image-models), [GluonCV](https://cv.gluon.ai), and [OpenMML Lab](https://github.com/open-mmlab).
 
