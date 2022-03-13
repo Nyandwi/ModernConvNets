@@ -1,4 +1,4 @@
-## Modern Convolutional Neural Networks
+## Modern Convolutional Neural Network Architectures
 
 * [AlexNet - Deep Convolutional Neural Networks](../convnets/01-alexnet.ipynb)
   
