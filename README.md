@@ -82,7 +82,7 @@ If you would like to learn more about ConvNets/CNNs, below are some few amazing 
 
 * [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu) - [Lecture 5](https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=5) and [Lecture 9](https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9)
 
-* [Deep Learning for Computer Vision - University of Michigan](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) - [Lecture 8](https://www.youtube.com/watch?v=XaZIlVrIO-Q&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r&index=8)
+* [Deep Learning for Computer Vision ](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) - [Lecture 8](https://www.youtube.com/watch?v=XaZIlVrIO-Q&list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r&index=8)
 
 * [Paper With Code - Convolutional Neural Networks](https://paperswithcode.com/methods/category/convolutional-neural-networks)
 
