@@ -97,12 +97,12 @@ If you would like to learn more about ConvNets/CNNs, below are some few amazing 
 If you use any material in this repository, you are welcome to cite it with:
 
 ```
-@article{Nyandwi2022ModernConvNets,
+@misc{Nyandwi2022ModernConvNets,
   author = {Nyandwi, Jean de Dieu},
   title = {ModernConvNets},
   year = {2022},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/Nyandwi/ModernConvNets}},
+  howpublished = {\url{https://github.com/Nyandwi/ModernConvNets},
 }
 ```
 ***************************
